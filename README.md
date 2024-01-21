@@ -64,6 +64,11 @@ We render the mesh ```mesh.ply``` into a virtual camera, which is specified by t
 ```
 ../../build/bin/Menderer -c intrinsics.txt -t pose.txt -m mesh.ply -o output/
 ```
+I used this instead: 
+```
+../../build/bin/Menderer -c intrinsics.txt -t pose.txt -m mesh.ply -o output/ --colored --shader none
+```
+
 Please check the rendered output image ```output/render_000000-color.png```.
 
 Instead of having only a single target camera pose, it is also possible to render the mesh into a list of camera poses ```trajectory.txt``` ([TUM RGB-D Benchmark trajectory format](https://vision.in.tum.de/data/datasets/rgbd-dataset/file_formats)):
